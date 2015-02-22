@@ -9,7 +9,10 @@
  * @since Twenty Twelve 1.0
  */
 ?>
+<?php if (!is_front_page()) : ?>
+
 	</div><!-- #main .wrapper -->
+
 	<footer id="colophon" role="contentinfo">
 		<div class="site-info">
 			<?php do_action( 'twentytwelve_credits' ); ?>
@@ -17,6 +20,8 @@
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+
+<?php endif; /* not is_front_page() */ ?>
 
 <?php wp_footer(); ?>
 </body>
