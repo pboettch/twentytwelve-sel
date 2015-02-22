@@ -13,6 +13,8 @@
 
 	</div><!-- #main .wrapper -->
 
+<?php endif; /* not is_front_page() */ ?>
+
 	<footer id="colophon" role="contentinfo">
 		<div class="site-info">
 			<?php do_action( 'twentytwelve_credits' ); ?>
@@ -21,7 +23,6 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<?php endif; /* not is_front_page() */ ?>
 
 <?php wp_footer(); ?>
 </body>

@@ -1385,41 +1385,59 @@ a.comment-edit-link:hover {
 	margin: 0.571428571rem 1.714285714rem 0.571428571rem 0;
 }
 
-#front-page-image-block {
-	height: 200px;
-
-	border-style: solid;
-	border-top-width: 3px;
-	border-bottom-width: 3px;
-	border-color: 000;
-
-	margin-bottom: 20px;
-	padding-bottom: 20px;
+#front-page-content {
 	text-align: center;
 }
 
-#front-page-text-block {
+#front-page .site-header {
+	padding: 12px 0;
+}
+
+#front-page hr {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height: 3px;
+	width: 100%;
+	background-color: #666;
+}
+
+#front-page-column-block {
+	display: inline-block;
 	margin-bottom: 10px;
-	text-align: center;
 }
 
 .front-page-image {
 	float: none;
 	width: 200px;
-	border: 0px;
-	padding: 0px;
-	margin: 10px;
+	height: 200px;
 }
 
-.front-page-text {
+.front-page-column {
 	display: table-cell;
 	vertical-align: top;
-	text-align: left;
-	width: 200px;
-	padding: 10px;
+	width: 220px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
-.front-page-text h2 {
+.front-page-text-block {
+	display: table-cell;
+	vertical-align: top;
+	text-align: justify;
+
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.front-page-text-block a, a:hover, a:focus {
+	/* color: #444; */
+	text-decoration: none;
+}
+
+.front-page-text-block h2 {
+	text-align: center;
 	margin-bottom: 10px;
 }
 
