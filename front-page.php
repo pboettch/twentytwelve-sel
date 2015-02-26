@@ -13,6 +13,7 @@ get_header();
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</hgroup>
+		<div class="logo"><a href="http://selidaire.fr/" title="SEL'idaire" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/logo_selidaire_v5.jpg" width="50" /></a></div>
 	</header><!-- #masthead -->
 
 	<div id="front-page-content">
