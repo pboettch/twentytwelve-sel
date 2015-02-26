@@ -18,29 +18,24 @@ get_header();
 	<div id="front-page-content">
 		<div id="front-page-column-block">
 			<hr />
-			<div class="front-page-column">
-				<img src="<?php echo bloginfo('template_url'); ?>/images/spring.jpg" alt="printemps" class="front-page-image" />
-				<hr />
-				<div class="front-page-text-block"><a href="http://selzeceux.fr/category/actualites/"><h2>Actualités</h2>Voici les actualités de SelZeCeux</a></div>
-			</div>
+			<?php
 
-			<div class="front-page-column">
-				<img src="<?php echo bloginfo('template_url'); ?>/images/summer.jpg" alt="été" class="front-page-image" />
-				<hr />
-				<div class="front-page-text-block"><a href="http://selzeceux.fr/les-statuts/"><h2>Système d’échange local</h2>Le principe du SEL est basé sur le simple constat que individu possède des moyens, des compétences ou du temps qu’il peut échanger avec les autres.</a></div>
-			</div>
+			$default_images = array(
+					get_bloginfo('template_url').'/images/spring.jpg',
+					get_bloginfo('template_url').'/images/summer.jpg',
+					get_bloginfo('template_url').'/images/autumn.jpg',
+					get_bloginfo('template_url').'/images/winter.jpg'
+			);
 
-			<div class="front-page-column">
-				<img src="<?php echo bloginfo('template_url'); ?>/images/autumn.jpg" alt="automne" class="front-page-image" />
-				<hr />
-				<div class="front-page-text-block"><a href="http://selzeceux.fr/jardin-des-ressources/"><h2>Echanges et ressources</h2>Tout le monde, enfants, retraités, a des choses à proposer, il suffit d’être à l’écoute de ses savoirs, ses loisirs, ses connaissances …. et les proposer.</a></div>
-			</div>
+			for ($i = 0; $i < 4; $i++) {
 
-			<div class="front-page-column">
-				<img src="<?php echo bloginfo('template_url'); ?>/images/winter.jpg" alt="hiver" class="front-page-image" />
+				?><div class="front-page-column">
+				<img src="<?php echo of_get_option('image'.$i, true); ?>" class="front-page-image" width="200" height="200" />
 				<hr />
-				<div class="front-page-text-block"><a href="http://selzeceux.fr/inscription/"><h2>Inscription</h2>Tout habitant de Villeconin et ses hameaux peut devenir membre de SelZéCeux . Les parents peuvent y inscrire leurs enfants mineurs s’ils sont eux-mêmes inscrits.</a></div>
-			</div>
+				<div class="front-page-text-block"><?php echo of_get_option('imagetext'.$i); ?> </div>
+				</div>
+
+			<?php } ?>
 			</div>
 	</div>
 
