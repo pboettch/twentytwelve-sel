@@ -543,20 +543,26 @@ a:hover {
 .site-header {
 	padding: 24px 0;
 	padding: 1.714285714rem 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-image: url('images/banner.jpg');
+	position: relative;
+	/* text-shadow: 1px 1px 4px #ffffff; */
 }
+
 .site-header h1,
 .site-header h2 {
 	text-align: center;
 }
 .site-header h1 a,
 .site-header h2 a {
-	color: #515151;
+	color: #dddddd;
 	display: inline-block;
 	text-decoration: none;
 }
 .site-header h1 a:hover,
 .site-header h2 a:hover {
-	color: #21759b;
+	color: #ffffff;
 }
 .site-header h1 {
 	font-size: 24px;
@@ -570,7 +576,7 @@ a:hover {
 	font-size: 13px;
 	font-size: 0.928571429rem;
 	line-height: 1.846153846;
-	color: #757575;
+	color: #dddddd;
 }
 
 .site-header hgroup {
@@ -598,12 +604,16 @@ a:hover {
 	font-size: 0.857142857rem;
 	line-height: 1.42857143;
 }
+.main-navigation ul {
+	background: rgba(227, 227, 227, 0.9);
+}
+
 .main-navigation a {
-	color: #5e5e5e;
+	color: #cccccc;
 }
 .main-navigation a:hover,
 .main-navigation a:focus {
-	color: #21759b;
+	color: #eeeeee;
 }
 .main-navigation ul.nav-menu,
 .main-navigation div.nav-menu > ul {
@@ -1399,6 +1409,9 @@ a.comment-edit-link:hover {
 
 #front-page .site-header {
 	padding: 12px 0;
+	background-image: url('none');
+}
+
 }
 
 #front-page hr {
@@ -1570,8 +1583,8 @@ img#wpstats {
 	}
 	.main-navigation ul.nav-menu,
 	.main-navigation div.nav-menu > ul {
-		border-bottom: 1px solid #ededed;
-		border-top: 1px solid #ededed;
+		/* border-bottom: 1px solid #ededed;
+		border-top: 1px solid #ededed; */
 		display: inline-block !important;
 		text-align: left;
 		width: 100%;
@@ -1626,7 +1639,6 @@ img#wpstats {
 		width: inherit;
 	}
 	.main-navigation li ul li a {
-		background: #efefef;
 		border-bottom: 1px solid #ededed;
 		display: block;
 		font-size: 11px;
@@ -1640,7 +1652,6 @@ img#wpstats {
 	}
 	.main-navigation li ul li a:hover,
 	.main-navigation li ul li a:focus {
-		background: #e3e3e3;
 		color: #444;
 	}
 	.main-navigation .current-menu-item > a,
