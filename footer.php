@@ -9,11 +9,7 @@
  * @since Twenty Twelve 1.0
  */
 ?>
-<?php if (!is_front_page()) : ?>
-
 	</div><!-- #main .wrapper -->
-
-<?php endif; /* not is_front_page() */ ?>
 
 	<footer id="colophon" role="contentinfo">
 		<div class="site-info">

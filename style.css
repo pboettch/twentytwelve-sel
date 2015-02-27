@@ -1410,8 +1410,13 @@ a.comment-edit-link:hover {
 #front-page .site-header {
 	padding: 12px 0;
 	background-image: url('none');
+	min-height: 56px;
 }
 
+/* readable text without background image */
+#front-page .site-header h1 a,
+#front-page .site-header h2 {
+	color: #444;
 }
 
 #front-page hr {
@@ -1436,6 +1441,7 @@ a.comment-edit-link:hover {
 }
 
 .front-page-column {
+float:left;
 	display: table-cell;
 	vertical-align: top;
 	width: 220px;
